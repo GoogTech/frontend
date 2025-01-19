@@ -63,7 +63,9 @@ tags:
 ### 安装指令
 
 ```shell
-pip install langchain==0.0.235 openai
+# openai需要指定旧版本，否则抛错: module 'openai' has no attribute 'error'
+# 抛错的详细原因见: https://community.openai.com/t/getting-attributeerror-module-openai-has-no-attribute-error/578418/3?u=googtech.io
+pip install langchain==0.0.235 openai==0.28.1
 ```
 
 ### 代码
